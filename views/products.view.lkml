@@ -39,9 +39,10 @@ view: products {
 
   dimension: name {
     type: string
+    link: {
+      url: "/dashboards/200?name={{value | url_encode}}"
+    }
     sql: ${TABLE}."NAME" ;;
-    html:
-    <a href="/dasboards/200?name={{value}}></a>;;
   }
 
   dimension: retail_price {
