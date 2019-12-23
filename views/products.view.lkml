@@ -40,6 +40,11 @@ view: products {
   dimension: name {
     type: string
     sql: ${TABLE}."NAME" ;;
+    link: {
+      label: "Demo dasboard"
+      url: "dashboards/200?name={{ value | encode_uri }}"
+    }
+
   }
 
   dimension: retail_price {
