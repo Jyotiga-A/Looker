@@ -42,7 +42,7 @@ view: products {
     sql: ${TABLE}."NAME" ;;
     link: {
       label: "Demo dasboard"
-      url: "dashboards/200?name={{ value | encode_uri }}"
+      url: "/dashboards/200?name={{ value | encode_uri }}"
     }
 
   }
