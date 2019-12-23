@@ -40,9 +40,6 @@ view: products {
   dimension: name {
     type: string
     sql: ${TABLE}."NAME" ;;
-    link: {
-      url: "/dashboards/200?name=?name={{ _filters['users.name'] | url_encode }}"
-    }
   }
 
   dimension: retail_price {
